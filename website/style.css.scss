@@ -1,0 +1,233 @@
+@import url(//fonts.googleapis.com/css?family=Lato:400,700|Architects+Daughter);
+@import url(./icomoon/style.css);
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+
+  padding: 0;
+
+  height: 100%;
+
+  font-family: Lato;
+}
+
+.curriculum {
+  min-height: 100%;
+
+  .side {
+    position: absolute;
+    position: fixed;
+    left: 0; top: 0;
+
+    width: 300px;
+    height: 100%;
+
+    padding: 35px;
+    padding-top: 360px;
+
+    background: #161616;
+    color: #FFFFFF;
+
+    .about {
+      border-left: 5px solid #1A4464;
+
+      padding: 15px 0;
+      padding-left: 14px;
+
+      font-size: 20px;
+      line-height: 1.7em;
+    }
+
+    .btw {
+      position: absolute;
+      left: 0; bottom: 30px;
+
+      width: 100%;
+
+      font-style: italic;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .main {
+    position: relative;
+    z-index: 1;
+
+    margin-left: 300px;
+
+    .header {
+      display: flex;
+
+      margin: 60px;
+      margin-left: -100px;
+
+      .infos {
+        h1 {
+          font-size: 50px;
+        }
+
+        h2 {
+          font-family: Architects Daughter;
+          font-size: 30px;
+        }
+      }
+
+      .picture {
+        flex: none;
+
+        margin-right: 30px;
+
+        .wrapper {
+          border-radius: 10px;
+
+          padding: 20px;
+
+          background: #FFFFFF;
+        }
+
+        img {
+          display: block;
+
+          width: 200px;
+          height: 200px;
+
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .timeline {
+      padding-left: 60px;
+
+      .events {
+        margin: 0;
+
+        border-left: 1px dashed grey;
+
+        padding: 0;
+        padding-left: 60px;
+        padding-bottom: 20px;
+
+        list-style-type: none;
+      }
+
+      .event {
+        position: relative;
+
+        margin: 40px 0;
+
+        width: 70%;
+
+        h3 {
+          margin-top: 0;
+
+          font-weight: 700;
+          font-size: 19px;
+
+          a {
+            text-decoration: none;
+
+            color: #8A8AD8;
+
+            transition: color .3s;
+
+            &:hover {
+              color: #0B0B8A;
+            }
+
+            &::after {
+              display: inline;
+              content: ' \e603';
+
+              font-family: icomoon;
+              font-weight: normal;
+              font-size: 15px;
+            }
+          }
+        }
+
+        p {
+          line-height: 1.7em;
+
+          a {
+            text-decoration: none;
+
+            color: #7396F0;
+          }
+        }
+
+        &:before {
+          position: absolute;
+          display: block;
+          left: -60px; top: 0;
+          content: '';
+
+          margin-left: -20px;
+
+          border-radius: 20px;
+
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+
+          font-size: 18px;
+          font-family: icomoon;
+          text-align: center;
+
+          color: #FFFFFF;
+          background: #000000;
+        }
+
+        &.world:before {
+          content: '\e602';
+          background: #76A4E9;
+        }
+
+        &.personal:before {
+          content: '\e601';
+          background: #84D18E;
+        }
+
+        &.job:before {
+          content: '\e600';
+          background: #E78E8E;
+        }
+
+        &.current:before {
+          box-shadow: 0 0 0 7px #FFE524;
+        }
+      }
+
+      .more {
+        margin-top: 50px;
+        margin-left: -90px;
+
+        width: 70%;
+
+        padding: 25px 0;
+
+        font-style: italic;
+        font-size: 15px;
+
+        color: #929292;
+        background: #FFFFFF;
+
+        a {
+          text-decoration: none;
+
+          color: inherit;
+        }
+      }
+    }
+  }
+}

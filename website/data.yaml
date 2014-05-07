@@ -1,0 +1,44 @@
+header:
+    name:    Maël Nison
+    subtext: Or maybe “Arcanis”
+    picture: https://avatars2.githubusercontent.com/u/1037931?s=460
+
+side:
+    about: |
+        Development afficionado. I love experimenting and hacking with Javascript, but a bit of C++ from time to time feels refreshing.
+
+timeline:
+
+    - type:        personal
+      name:        Pokélib
+      link:        https://github.com/arcanis/pokelib
+      description: Demo project, the Pokélib is the first library using the Virt.js environment. It exposes a convenient javascript API to manipulate the runtime values of a running Pokemon rom.
+
+    - type:        personal
+      name:        Virt.js
+      link:        https://github.com/arcanis/virt.js
+      description: Virt.js is an emulation environment at its core, containing useful and reusable tools. However, it also contains various emulator engine, the first one being the GameBoy. Each one being packaged as a library, they can be used in any application type.
+
+    - type:        job current
+      name:        Sketchfab
+      link:        https://sketchfab.com
+      description: Sketchfab is the leader of the 3D content publishing on the web. Using advanced technologies such as WebGL, we give artists a convenient way to showcase their works. I'm currently working as frontend developer.
+
+    - type:        personal
+      name:        Voxplode
+      link:        https://github.com/arcanis/voxplode
+      description: A long-running project of mine has been to implement a voxel world using WebGL. Voxplode is the conclusion of those experiments. It features a marching cube implemention, powered by a thread pool (using javascript's Workers).
+
+    - type:        world
+      name:        Canada
+      description: I spent a year in Canada (Montréal) for my studies. A great country, with great people! On top of meeting caribous, I also gave a few talks at <a href="http://js-montreal.org">JSMontréal</a>.
+
+    - type:        personal
+      name:        Castel
+      link:        https://github.com/castel
+      description: Castel is pretty fun project unrelated to the web development. It's both a library (libcastel), a compiler (castelc), and a programming language (castel itself). It is made in C++, using LLVM / Boost / CMake. I sometimes try to compile it using Emscripten.
+
+    - type:        job
+      name:        Wisembly
+      link:        http://wisembly.com
+      description: Wisembly is a web solution whose goal is to give tools allowing a better communication between meeting participants. I stayed at this company for six month as frontend intern.

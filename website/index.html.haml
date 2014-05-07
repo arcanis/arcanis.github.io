@@ -1,0 +1,42 @@
+- require 'yaml'
+- data = YAML.load(File.read('data.yaml'))
+!!!
+%html
+  %head
+    %meta(charset="utf-8")
+    %title Maël Nison on Github
+    %link(rel="stylesheet" href="style.css")
+    %script(src="analytics.js")
+
+  %body
+    %div.curriculum
+
+      %div.side
+        %div.about
+          #{data['side']['about']}
+        %div.btw
+          %a(href="https://arcanis.fr")
+            Btw, I have some sort of french blog!
+
+      %div.main
+        %div.header
+          %div.picture
+            %div.wrapper
+              %img(src="#{data['header']['picture']}")
+          %div.infos
+            %h1 #{data['header']['name']}
+            %h2 #{data['header']['subtext']}
+
+        %div.timeline
+          %ul.events
+            - data['timeline'].each do |experience|
+              %li.event(class="#{experience['type']}")
+                %h3
+                  - if experience['link']
+                    %a(href="#{experience['link']}") #{experience['name']}
+                  - else
+                    #{experience['name']}
+                %p #{experience['description']}
+            %li.more
+              %a(href="https://github.com/arcanis?tab=repositories")
+                And a hell lot more of various lesser projects — FFIX, particles, prolog … :)
