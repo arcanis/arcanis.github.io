@@ -1,0 +1,168 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700|Architects+Daughter);
+@import url(./icomoon/style.css);
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Lato;
+}
+
+.curriculum {
+  min-height: 100%;
+}
+.curriculum .side {
+  position: absolute;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  padding: 35px;
+  padding-top: 360px;
+  background: #161616;
+  color: #FFFFFF;
+}
+.curriculum .side .about {
+  border-left: 5px solid #1A4464;
+  padding: 15px 0;
+  padding-left: 14px;
+  font-size: 20px;
+  line-height: 1.7em;
+}
+.curriculum .side .btw {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 100%;
+  font-style: italic;
+  text-align: center;
+}
+.curriculum .side .btw a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.curriculum .main {
+  position: relative;
+  z-index: 1;
+  margin-left: 300px;
+}
+.curriculum .main .header {
+  display: flex;
+  margin: 60px;
+  margin-left: -100px;
+}
+.curriculum .main .header .infos h1 {
+  font-size: 50px;
+}
+.curriculum .main .header .infos h2 {
+  font-family: Architects Daughter;
+  font-size: 30px;
+}
+.curriculum .main .header .picture {
+  flex: none;
+  margin-right: 30px;
+}
+.curriculum .main .header .picture .wrapper {
+  border-radius: 10px;
+  padding: 20px;
+  background: #FFFFFF;
+}
+.curriculum .main .header .picture img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+.curriculum .main .timeline {
+  padding-left: 60px;
+}
+.curriculum .main .timeline .events {
+  margin: 0;
+  border-left: 1px dashed grey;
+  padding: 0;
+  padding-left: 60px;
+  padding-bottom: 20px;
+  list-style-type: none;
+}
+.curriculum .main .timeline .event {
+  position: relative;
+  margin: 40px 0;
+  width: 70%;
+}
+.curriculum .main .timeline .event h3 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 19px;
+}
+.curriculum .main .timeline .event h3 a {
+  text-decoration: none;
+  color: #8A8AD8;
+  transition: color .3s;
+}
+.curriculum .main .timeline .event h3 a:hover {
+  color: #0B0B8A;
+}
+.curriculum .main .timeline .event h3 a::after {
+  display: inline;
+  content: ' \e603';
+  font-family: icomoon;
+  font-weight: normal;
+  font-size: 15px;
+}
+.curriculum .main .timeline .event p {
+  line-height: 1.7em;
+}
+.curriculum .main .timeline .event p a {
+  text-decoration: none;
+  color: #7396F0;
+}
+.curriculum .main .timeline .event:before {
+  position: absolute;
+  display: block;
+  left: -60px;
+  top: 0;
+  content: '';
+  margin-left: -20px;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: icomoon;
+  text-align: center;
+  color: #FFFFFF;
+  background: #000000;
+}
+.curriculum .main .timeline .event.world:before {
+  content: '\e602';
+  background: #76A4E9;
+}
+.curriculum .main .timeline .event.personal:before {
+  content: '\e601';
+  background: #84D18E;
+}
+.curriculum .main .timeline .event.job:before {
+  content: '\e600';
+  background: #E78E8E;
+}
+.curriculum .main .timeline .event.current:before {
+  box-shadow: 0 0 0 7px #FFE524;
+}
+.curriculum .main .timeline .more {
+  margin-top: 50px;
+  margin-left: -90px;
+  width: 70%;
+  padding: 25px 0;
+  font-style: italic;
+  font-size: 15px;
+  color: #929292;
+  background: #FFFFFF;
+}
+.curriculum .main .timeline .more a {
+  text-decoration: none;
+  color: inherit;
+}
