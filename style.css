@@ -137,16 +137,20 @@ html, body {
   color: #FFFFFF;
   background: #000000;
 }
+.curriculum .main .timeline .event.talk:before {
+  content: '\e96d';
+  background: #D5B742;
+}
 .curriculum .main .timeline .event.world:before {
-  content: '\e602';
+  content: '\e9ca';
   background: #76A4E9;
 }
 .curriculum .main .timeline .event.personal:before {
-  content: '\e601';
+  content: '\e916';
   background: #84D18E;
 }
 .curriculum .main .timeline .event.job:before {
-  content: '\e600';
+  content: '\e903';
   background: #E78E8E;
 }
 .curriculum .main .timeline .event.current:before {
