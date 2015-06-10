@@ -108,7 +108,7 @@ html, body {
 }
 .curriculum .main .timeline .event h3 a::after {
   display: inline;
-  content: ' \e603';
+  content: ' \e600';
   font-family: icomoon;
   font-weight: normal;
   font-size: 15px;
@@ -138,19 +138,19 @@ html, body {
   background: #000000;
 }
 .curriculum .main .timeline .event.talk:before {
-  content: '\e96d';
+  content: '\e604';
   background: #D5B742;
 }
 .curriculum .main .timeline .event.world:before {
-  content: '\e9ca';
+  content: '\e601';
   background: #76A4E9;
 }
 .curriculum .main .timeline .event.personal:before {
-  content: '\e916';
+  content: '\e603';
   background: #84D18E;
 }
 .curriculum .main .timeline .event.job:before {
-  content: '\e903';
+  content: '\e602';
   background: #E78E8E;
 }
 .curriculum .main .timeline .event.current:before {
