@@ -19,7 +19,7 @@ html, body {
   position: fixed;
   left: 0;
   top: 0;
-  width: 300px;
+  width: 320px;
   height: 100%;
   padding: 35px;
   padding-top: 360px;
@@ -48,7 +48,7 @@ html, body {
 .curriculum .main {
   position: relative;
   z-index: 1;
-  margin-left: 300px;
+  margin-left: 320px;
 }
 .curriculum .main .header {
   display: flex;
