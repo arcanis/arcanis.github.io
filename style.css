@@ -71,6 +71,15 @@ html, body {
   margin: 60px;
   margin-left: -100px;
 }
+.curriculum .main .header .infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.curriculum .main .header .infos > * {
+  margin: 0;
+}
 .curriculum .main .header .infos h1 {
   font-size: 50px;
 }
